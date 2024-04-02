@@ -7,6 +7,7 @@ using SQLite;
 
 namespace LearnTutorial.Models
 {
+    //These are for the SQLite table that gets inputted from the Observation Page. The filepath is made on Maui.Program.Cs. The Methods to intereact with data base are located in the Observation Repository
     [Table ("observations")]
     public class Observation
     {

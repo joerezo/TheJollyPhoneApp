@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace LearnTutorial
 {
+    //Created to combined filename and file path. This is call in the MAUIProgram.Cs
     public class FileAccessHelper
     {
         public static string GetLocalFilePath(string filename)

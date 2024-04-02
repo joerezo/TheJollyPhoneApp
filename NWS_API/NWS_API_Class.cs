@@ -3,6 +3,10 @@ using System;
 
 namespace NWS_API
 {
+    //This is used for temperture in the JOLLY PHONE APP. PAGES. ConditionsPage.xaml.cs in the
+    //GetWaterTempConditions() method on that page
+
+    //Link to the URL used to generat his class is on ConditionsPage.xaml.cs
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
     public class BarometricPressure
     {

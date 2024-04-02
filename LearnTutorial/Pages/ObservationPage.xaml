@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnTutorial.Pages.ObservationPage"
+             Title="ObservationPage">
+            
+    
+    <ScrollView>
+        <VerticalStackLayout Padding="20,20,20,20" BackgroundColor="LightBlue">
+            <Frame CornerRadius="30" BackgroundColor="Azure">
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="*,*,*,*,*"
+                  BackgroundColor="Azure"
+                  Margin="10,10,10,10">
+                <Label Grid.Column="0"
+                       HorizontalOptions="CenterAndExpand"
+                       Grid.Row="0"
+                       Text="Dive Date:"/>
+            <Label Grid.Column="0"
+                   HorizontalOptions="Center"
+                       Grid.Row="1"
+                       Text="Dive Time:"/>
+            <Label Grid.Column="0"
+                   HorizontalOptions="Center"
+                    Grid.Row="2"
+                    Text="Dive Visibility:"/>
+                    <DatePicker x:Name="datePicker" Grid.Row="0" Grid.Column="2" HorizontalOptions="Start"
+                         Date="{Binding SelectedDate}"/>
+                    <!--<Entry Placeholder="Please Enter Dive Date"
+                       HorizontalTextAlignment="End"
+                       VerticalOptions="Center"
+                       Grid.Column="2"
+                       Grid.Row="0"
+                       x:Name="txtDiveDate"/>-->
+                <!--<Entry Placeholder="Please Enter Dive Time"
+                        Grid.Column="2"
+                        Grid.Row="1"
+                        x:Name="txtDiveTime"/>-->
+                    <TimePicker x:Name="timePicker" Grid.Row="1" Grid.Column="2" HorizontalOptions="Start"
+                            Time="{Binding SelectedTime}"/>
+                    <!--<Entry Placeholder="Enter Dive Visibility"
+                        Grid.Column="2"
+                        Grid.Row="2"
+                        x:Name="txtDiveVisibility"/>-->
+                    <Picker  x:Name="visibilityPicker" x:DataType="x:Double" Grid.Row="2" Grid.Column="2" HorizontalOptions="Start">
+                        <Picker.Items>
+                            <x:String>0</x:String>
+                            <x:String>5</x:String>
+                            <x:String>10</x:String>
+                            <x:String>15</x:String>
+                            <x:String>20</x:String>
+                            <x:String>25</x:String>
+                            <x:String>30</x:String>
+                            <x:String>35</x:String>
+                            <x:String>40</x:String>
+                            <x:String>45</x:String>
+                            <x:String>50</x:String>
+                        </Picker.Items>
+                    </Picker>
+                
+            </Grid>
+            </Frame>
+
+
+
+            <Label Text="I saw ...(submit Observation button @ bottom of screen)"
+                   FontSize="Large"
+                   />
+            <!--Second Grid View-->
+            <Frame CornerRadius="30" BackgroundColor="Aquamarine">
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="*,*,*,*"
+                  BackgroundColor="Aquamarine">
+                <!--First Image-->
+                <Image Source="leopard_shark.jpg"                       
+                       Grid.Column="0"
+                       Grid.Row="0"/>
+
+                <Label Text="Leopard Shark" Grid.Column="1" Grid.Row="0" VerticalOptions="Start"/>
+                    <Picker x:Name="leopardSharkPicker" x:DataType="x:Double" Title="Leopard Shark Depth (ft)" Grid.Column="1" Grid.Row="0" VerticalOptions="Center">
+                    <Picker.Items>
+                        <x:String>Not Seen</x:String>
+                        <x:String>5</x:String>
+                        <x:String>10</x:String>
+                        <x:String>15</x:String>
+                        <x:String>20</x:String>
+                        <x:String>25</x:String>
+                        <x:String>30</x:String>
+                        <x:String>35</x:String>
+                        <x:String>40</x:String>
+                        <x:String>45</x:String>
+                        <x:String>50</x:String>
+                        <x:String>55</x:String>
+                        <x:String>60</x:String>
+                        </Picker.Items>
+
+                    </Picker>
+                <!--Second Image-->
+                <Image Source="guitar_fish.jpg"                       
+                        Grid.Column="0"
+                         Grid.Row="1"/>
+
+                    <Label Text="Guitar Fish" Grid.Column="1" Grid.Row="1" VerticalOptions="Start"/>
+                    <Picker x:Name="guitarFishPicker" x:DataType="x:Double" Title="Guitar Fish Depth (ft)" Grid.Column="1" Grid.Row="1" VerticalOptions="Center">
+                        <Picker.Items>
+                            <x:String>Not Seen</x:String>
+                            <x:String>5</x:String>
+                            <x:String>10</x:String>
+                            <x:String>15</x:String>
+                            <x:String>20</x:String>
+                            <x:String>25</x:String>
+                            <x:String>30</x:String>
+                            <x:String>35</x:String>
+                            <x:String>40</x:String>
+                            <x:String>45</x:String>
+                            <x:String>50</x:String>
+                            <x:String>55</x:String>
+                            <x:String>60</x:String>
+                        </Picker.Items>
+
+                    </Picker>
+                    <!--Third Image-->
+                <Image Source="garibaldi.jpg"
+                       
+                    Grid.Column="0"
+                    Grid.Row="2"/>
+                <Label Text="Garibaldi" Grid.Column="1" Grid.Row="2" VerticalOptions="Start"/>
+                    <Picker x:Name="garibaldiPicker" x:DataType="x:Double" Title="Garibaldi Depth (ft)" Grid.Column="1" Grid.Row="2" VerticalOptions="Center">
+                        <Picker.Items>
+                            <x:String>Not Seen</x:String>
+                            <x:String>5</x:String>
+                            <x:String>10</x:String>
+                            <x:String>15</x:String>
+                            <x:String>20</x:String>
+                            <x:String>25</x:String>
+                            <x:String>30</x:String>
+                            <x:String>35</x:String>
+                            <x:String>40</x:String>
+                            <x:String>45</x:String>
+                            <x:String>50</x:String>
+                            <x:String>55</x:String>
+                            <x:String>60</x:String>
+                        </Picker.Items>
+
+                    </Picker>
+
+
+                    <!--Fourth Image-->
+                <Image Source="spiny_lobster.jpg"                       
+                    Grid.Column="0"
+                    Grid.Row="3"/>
+
+
+                    <Label Text="Spiny Lobster" Grid.Column="1" Grid.Row="3" VerticalOptions="Start"/>
+                    <Picker x:Name="spinyLobsterPicker" x:DataType="x:Double" Title="Spiny Lobster Depth (ft)" Grid.Column="1" Grid.Row="3" VerticalOptions="Center">
+                        <Picker.Items>
+                            <x:String>Not Seen</x:String>
+                            <x:String>5</x:String>
+                            <x:String>10</x:String>
+                            <x:String>15</x:String>
+                            <x:String>20</x:String>
+                            <x:String>25</x:String>
+                            <x:String>30</x:String>
+                            <x:String>35</x:String>
+                            <x:String>40</x:String>
+                            <x:String>45</x:String>
+                            <x:String>50</x:String>
+                            <x:String>55</x:String>
+                            <x:String>60</x:String>
+                        </Picker.Items>
+
+                    </Picker>
+                </Grid>
+            </Frame>
+            <!--Cool little tool that slides on the screen <Slider>
+                
+            </Slider>-->
+            <Label x:Name="statusMessage" HorizontalOptions="Center" Text="Status: Nothing submitted yet."/>
+            <Button Text="Submit Observation"
+                    Clicked="OnNewObservationButtonClicked"/>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

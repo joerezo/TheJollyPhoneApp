@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnTutorial.Pages.LocationPage"
+             Title="Sightings">
+    <ScrollView>
+    <VerticalStackLayout>
+        <Label 
+            Text="Leopard Shark"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            x:Name="lblLeopardSightings"
+            HeightRequest="120"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Label 
+            Text="Guitar Fish"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            x:Name="lblGuitarFishSightings"
+            HeightRequest="120"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Label 
+            Text="Garibaldi"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            x:Name="lblGaribaldiSightings"
+            HeightRequest="120"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        <Label 
+            Text="Spiny Lobster"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            x:Name="lblSpinyLobsterSightings"
+            HeightRequest="120"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+            <Button Text="Refresh" HorizontalOptions="Center" Clicked="OnRefreshButtonClicked"/>
+        </VerticalStackLayout>
+        
+    </ScrollView>
+</ContentPage>

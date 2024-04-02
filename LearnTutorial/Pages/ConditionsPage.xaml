@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnTutorial.Pages.ConditionsPage"
+             Title="Conditions">
+    
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*,*,*,*,*,*">
+            <Label HeightRequest="30"  Grid.Row="0" Grid.Column="0"
+                Text="Expected Visibility (ft):"
+                 VerticalOptions="Center" 
+                 HorizontalOptions="Center" />
+
+            <Label x:Name="lblExpectedVisibility"
+                   HeightRequest="30" Grid.Row="0" Grid.Column="1" 
+                   VerticalOptions="Center" HorizontalOptions="Start"/>
+           
+            <Label HeightRequest="30"  Grid.Row="1" Grid.Column="0"
+                Text="Water Temperature (F):"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label x:Name="lblWaterTemp" 
+                   HeightRequest="30" Grid.Row="1" Grid.Column="1" Text="placeholder 20 ft"
+                VerticalOptions="End" HorizontalOptions="Start"/>
+
+                        
+            <Label HeightRequest="30"  Grid.Row="3" Grid.Column="0"
+                Text="Wave Height (ft) :"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label x:Name="lblNBDCWaveHeight" 
+                 HeightRequest="30" Grid.Row="3" Grid.Column="1" Text="6 ft"
+                VerticalOptions="End" HorizontalOptions="Start"/>
+            
+            <Label HeightRequest="30"  Grid.Row="4" Grid.Column="0"
+                Text="Ocean Air Temp (F):"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label x:Name="lblAirTemp" 
+                HeightRequest="30" Grid.Row="4" Grid.Column="1" 
+                VerticalOptions="End" HorizontalOptions="Start"/>
+
+            <Label HeightRequest="30"  Grid.Row="5" Grid.Column="0"
+                Text="Current Weather"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label x:Name="lblCurrentWeather" 
+                HeightRequest="60" Grid.Row="5" Grid.Column="1" 
+                VerticalOptions="End" HorizontalOptions="Start"/>
+
+            <Label HeightRequest="30"  Grid.Row="6" Grid.Column="0"
+                Text="Short Term Forecast:" FontAttributes="Bold"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label x:Name="lblShortTermForecast" Padding="15"
+                HeightRequest="150" Grid.Row="7" Grid.ColumnSpan="2" 
+                VerticalOptions="Center"  HorizontalOptions="Center"/>
+
+        </Grid>
+        <Label 
+            Text="You stay classy San Diego!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

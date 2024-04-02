@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnTutorial.Pages.ReviewDBPage"
+             Title="Review Records">
+
+    <ScrollView>
+    <VerticalStackLayout>
+        <Grid ColumnDefinitions="*,*,*,*,*" RowDefinitions="*" Margin="10">
+            <Label Text="Id" Grid.Column="1" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Entry x:Name="entryId" Placeholder="Enter Id" Grid.Column="2" Grid.Row="0" MinimumHeightRequest="20"/>
+            <Button Text="Select" Grid.Column="3" Grid.Row="0" Grid.ColumnSpan="2" Margin="10" Clicked="OnSelectButtonClicked"/>
+
+        </Grid>
+        <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="*,*,*,*,*">
+            <Label Text="Date: " Grid.Column="0" Grid.Row="0" HorizontalOptions="Center"/>
+            <Entry  x:Name="entryDateUpdate" Placeholder="Date" Grid.Column="1" Grid.Row="0"/>
+            
+            <Label Text="Time: " Grid.Column="0" Grid.Row="1" HorizontalOptions="Center"/>
+            <Entry x:Name="entryTimeUpdate" Placeholder="Time" Grid.Column="1" Grid.Row="1"/>
+            
+            <Label Text="Visibility: " Grid.Column="0" Grid.Row="2" HorizontalOptions="Center"/>
+            <Entry  x:Name="entryVisibilityUpdate" Placeholder="Visibility(ft)" Grid.Column="1" Grid.Row="2"/>
+            
+           
+            <!--This is the next column-->
+            <Label Text="Leopard Shark: " Grid.Column="2" Grid.Row="0" HorizontalOptions="Center"/>
+            <Entry  x:Name="entryLeopardSharkUpdate" Placeholder="Depth(ft)" Grid.Column="3" Grid.Row="0"/>
+            
+            <Label Text="Guitar Fish: " Grid.Column="2" Grid.Row="1" HorizontalOptions="Center"/>
+            <Entry  x:Name="entryGuitarFishUpdate" Placeholder="Depth(ft)" Grid.Column="3" Grid.Row="1"/>
+            
+            <Label Text="Garibaldi: " Grid.Column="2" Grid.Row="2" HorizontalOptions="Center"/>
+            <Entry  x:Name="entryGaribaldiUpdate" Placeholder="Depth(ft)" Grid.Column="3" Grid.Row="2"/>
+            
+            <Label Text="Spiny Lobster: " Grid.Column="2" Grid.Row="3" HorizontalOptions="Center"/>
+            <Entry  x:Name="entrySpinyLobsterUpdate" Placeholder="Depth(ft)" Grid.Column="3" Grid.Row="3"/>
+
+            <Button Text="Update" Grid.Column="1" Grid.Row="4" Margin="10" Clicked="OnUpdateButtonClicked"/>
+            <Button Text="Delete" Grid.Column="2" Grid.Row="4" Margin="10" Clicked="OnDeleteButtonClicked"/>
+
+        </Grid>
+        <Label 
+            Text="View Records Below. Enter ID to delete or update record. Enter '-1' if species not seen"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Margin=" 20"/>
+
+            <Label x:Name="lblDataReview" HorizontalOptions="Center" Margin=" 10"/>
+           
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

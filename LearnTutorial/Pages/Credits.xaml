@@ -3,10 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LearnTutorial.Pages.Credits"
              Title="Credits">
+    <ScrollView>
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
+            Text="Thank you for downloading 'The Jolly'!"
+            VerticalOptions="Center"
+            Margin="20"
             HorizontalOptions="Center" />
+        <Label Text="For any recommendations of feedback please reach out or leave a recommendations/issues at:  https://github.com/joerezo/TheJollyPhoneApp'" 
+               VerticalOptions="Center" 
+               Margin="20"
+                HorizontalOptions="Center"/>
+
+        <Label Text="A shout out to NOAA and NWS for their amazing APIs!" 
+       VerticalOptions="Center" 
+       Margin="20"
+        HorizontalOptions="Center"/>
+
+        <Label Text="I learned MAUI from these resources:" 
+        VerticalOptions="Center" 
+        Margin="20"
+        HorizontalOptions="Start"/>
+        <Label Text="https://learn.microsoft.com/en-us/training/paths/build-apps-with-dotnet-maui/" 
+            VerticalOptions="Center" 
+            Margin="10"
+            HorizontalOptions="Center"/>
+        
+        <Label Text="https://www.youtube.com/@CodingDroplets" 
+             VerticalOptions="Center" 
+             Margin="10"
+            HorizontalOptions="Center"/>
     </VerticalStackLayout>
+    
+    </ScrollView>
 </ContentPage>

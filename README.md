@@ -1,5 +1,5 @@
 # TheJollyMAUIApp
-This is project that allowed be to bring many of my ongoing projects into one. In the below picture, I published my application to my phone. I learned how to sign the apllication and the various formats (aab) and (apk) files for Android phones. The project is work in progress and will go trhough many iterations to make it the best it can be.
+This is project that allowed be to bring many of my ongoing projects into one. In the below picture, I published my application to my phone. I learned how to sign the application and the various formats (aab) and (apk) files for Android phones. The project is work in progress and will go trhough many iterations to make it the best it can be.
 
 In the image below, I make 3 seperate calls, 2 to established APIs from the National Oceanic and Atmospheric Administraion (NOAA) and National Weather Service, and one is a call to a web page for buoy data from NOAA, that I parse into the information I need.
 
